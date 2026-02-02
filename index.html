@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNAPOLOGETIC PORTFOLIO</title>
+
+    <!-- Google Fonts: Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script type="module" crossorigin src="/portofolio-web-1/assets/index-Ckx2Mife.js"></script>
+    <link rel="stylesheet" crossorigin href="/portofolio-web-1/assets/index-71on8w9I.css">
+  </head>
+  <body class="antialiased min-h-screen">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 p-4 sm:p-6 pointer-events-none transition-all duration-300">
+      <div class="container mx-auto flex justify-between items-start">
+        <!-- Logo -->
+        <a href="#" class="pointer-events-auto bg-neo-primary text-black border-4 border-neo-text p-3 shadow-neo-sm font-black text-xl hover:rotate-2 transition-transform duration-200"> DESIGNER.OS </a>
+
+        <!-- Menu -->
+        <div class="pointer-events-auto hidden md:flex gap-4">
+          <a href="#work" class="bg-neo-bg text-neo-text border-4 border-neo-text px-6 py-3 font-bold hover:bg-neo-primary hover:text-black hover:shadow-neo transition-all duration-200 neo-click">WORK</a>
+          <a href="#about" class="bg-neo-bg text-neo-text border-4 border-neo-text px-6 py-3 font-bold hover:bg-neo-primary hover:text-black hover:shadow-neo transition-all duration-200 neo-click">ABOUT</a>
+          <a href="#contact" class="bg-neo-bg text-neo-text border-4 border-neo-text px-6 py-3 font-bold hover:bg-neo-primary hover:text-black hover:shadow-neo transition-all duration-200 neo-click">CONTACT</a>
+
+          <!-- Theme Toggle -->
+          <button id="theme-toggle" class="bg-neo-reverse text-neo-bg border-4 border-neo-text p-3 hover:bg-neo-primary hover:text-black transition-colors neo-click min-w-[52px] pointer-events-auto">
+            <i id="icon-sun" data-lucide="sun" class="w-5 h-5 hidden"></i>
+            <i id="icon-moon" data-lucide="moon" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="flex gap-2 pointer-events-auto md:hidden">
+          <button id="theme-toggle-mobile" class="bg-neo-reverse text-neo-bg border-4 border-neo-text p-3 shadow-neo-sm neo-click">
+            <i data-lucide="sun-moon" class="w-6 h-6"></i>
+          </button>
+          <button class="bg-neo-bg text-neo-text border-4 border-neo-text p-3 shadow-neo-sm neo-click">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-grid">
+      <!-- Decorative background elements -->
+      <div class="absolute top-1/4 left-10 w-24 h-24 bg-neo-primary border-4 border-neo-text rotate-12 shadow-neo hidden lg:block"></div>
+      <div class="absolute bottom-1/4 right-10 w-32 h-32 bg-neo-reverse rounded-full border-4 border-neo-text -rotate-12 shadow-neo hidden lg:block flex items-center justify-center">
+        <i data-lucide="star" class="w-16 h-16 fill-neo-bg"></i>
+      </div>
+
+      <div class="container mx-auto px-4 z-10 text-center flex flex-col items-center">
+        <!-- Floating badge -->
+        <div class="mb-6 bg-neo-primary border-4 border-neo-text text-black py-2 px-6 shadow-neo-sm -rotate-2 inline-block">
+          <span class="font-bold tracking-widest text-sm">AVAILABLE FOR HIRE 2026</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="text-6xl md:text-8xl lg:text-9xl font-black leading-[0.85] mb-8 tracking-tighter text-neo-text">
+          DIGITAL <br />
+          <span class="text-neo-primary">GOLD</span> <br />
+          CREATOR
+        </h1>
+
+        <p class="text-xl md:text-2xl font-bold max-w-2xl mx-auto mb-10 bg-neo-container text-neo-text border-2 border-neo-text p-4 shadow-neo-sm transform rotate-1">
+          Building raw, unfiltered, and unapologetic digital experiences that refuse to be ignored.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6">
+          <a href="#work" class="bg-neo-primary border-4 border-neo-text text-black py-4 px-10 text-xl font-black shadow-neo hover:-translate-y-1 hover:shadow-neo-lg transition-all neo-click flex items-center gap-3">
+            SEE MY WORK <i data-lucide="arrow-down-right"></i>
+          </a>
+          <a href="#contact" class="bg-neo-container text-neo-text border-4 border-neo-text py-4 px-10 text-xl font-black shadow-neo hover:bg-neo-primary hover:text-black transition-all neo-click"> CONTACT ME </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- MARQUEE DIVIDER -->
+    <div class="bg-neo-text text-neo-bg border-y-4 border-neo-text overflow-hidden py-4 rotate-1">
+      <div class="whitespace-nowrap animate-marquee font-bold text-3xl uppercase tracking-widest">
+        ★ GOLD STANDARD ★ VISUAL IMPACT ★ PIXEL PERFECT ★ GOLD STANDARD ★ VISUAL IMPACT ★ PIXEL PERFECT ★ GOLD STANDARD ★ VISUAL IMPACT ★ PIXEL PERFECT
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 relative">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <!-- Picture container: transform and border -->
+          <div class="relative group">
+            <!-- Background decoration -->
+            <div class="absolute inset-0 bg-neo-primary border-4 border-neo-text translate-x-4 translate-y-4 group-hover:translate-x-6 group-hover:translate-y-6 transition-transform"></div>
+
+            <!-- Profile image -->
+            <img
+              src="/portofolio-web-1/assets/me-cxUbkvqA.JPG"
+              alt="Me"
+              class="relative w-full aspect-[4/5] object-cover border-4 border-neo-text grayscale hover:grayscale-0 transition-all duration-300 shadow-neo group-hover:-translate-y-2 group-hover:-translate-x-2 bg-neo-container"
+            />
+
+            <!-- Sticker on image -->
+            <div class="absolute -bottom-6 -right-6 bg-neo-reverse border-4 border-neo-text p-4 rotate-6 shadow-neo">
+              <i data-lucide="crown" class="w-12 h-12 text-neo-bg"></i>
+            </div>
+          </div>
+
+          <div class="space-y-8 bg-neo-container text-neo-text border-4 border-neo-text p-8 md:p-12 shadow-neo-lg relative">
+            <h2 class="text-5xl md:text-7xl font-black uppercase mb-4">Who is <br /><span class="text-neo-primary">This Guy?</span></h2>
+            <p class="text-xl font-bold leading-relaxed">
+              I'm a designer who thinks "clean" is a synonym for "boring." I specialize in breaking grids, clashing colors, and making websites that feel like a kick in the teeth (in a good way).
+            </p>
+
+            <!-- Skill Tags -->
+            <div class="flex flex-wrap gap-3">
+              <span class="bg-neo-primary text-black border-neo-text border-2 px-3 py-1 font-bold uppercase text-sm shadow-neo-sm">UI Design</span>
+              <span class="bg-neo-reverse text-neo-bg border-neo-text border-2 px-3 py-1 font-bold uppercase text-sm shadow-neo-sm">Front-end</span>
+              <span class="bg-neo-muted text-neo-text border-neo-text border-2 px-3 py-1 font-bold uppercase text-sm shadow-neo-sm">Chaos Theory</span>
+              <span class="bg-neo-container text-neo-text border-neo-text border-2 px-3 py-1 font-bold uppercase text-sm shadow-neo-sm">CSS Crimes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK SECTION -->
+    <section id="work" class="py-24 border-t-4 border-neo-text bg-neo-bg">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-end mb-16">
+          <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter shadow-neo-bg text-neo-text">Selected<br />Works</h2>
+          <div class="hidden md:block text-neo-text">
+            <i data-lucide="arrow-down-circle" class="w-24 h-24 stroke-1"></i>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Project 1 -->
+          <article class="bg-neo-bg border-4 border-neo-text neo-hover-lift group cursor-pointer">
+            <div class="h-64 bg-neo-primary border-b-4 border-neo-text flex items-center justify-center overflow-hidden relative">
+              <!-- Placeholder pattern for project image -->
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neo-bg via-neo-primary to-neo-primary opacity-50"></div>
+              <span class="text-9xl font-black opacity-20 group-hover:scale-110 transition-transform duration-300 text-black">01</span>
+            </div>
+            <div class="p-8 text-neo-text">
+              <h3 class="text-3xl font-black mb-2 uppercase">Project Alpha</h3>
+              <p class="font-medium mb-6">A website that yells at you until you buy the product.</p>
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2">
+                  <span class="text-xs font-bold border border-neo-text px-2 py-1 uppercase">React</span>
+                  <span class="text-xs font-bold border border-neo-text px-2 py-1 uppercase">Vite</span>
+                </div>
+                <button class="bg-neo-text text-neo-bg p-2 hover:bg-neo-primary hover:text-black transition-colors border-2 border-transparent hover:border-neo-text">
+                  <i data-lucide="arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="bg-neo-bg border-4 border-neo-text neo-hover-lift group cursor-pointer md:mt-16">
+            <div class="h-64 bg-neo-reverse border-b-4 border-neo-text flex items-center justify-center overflow-hidden relative">
+              <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,#000_10px,#000_12px)] opacity-10"></div>
+              <span class="text-9xl font-black opacity-20 group-hover:scale-110 transition-transform duration-300 text-neo-bg">02</span>
+            </div>
+            <div class="p-8 text-neo-text">
+              <h3 class="text-3xl font-black mb-2 uppercase">The Ugly store</h3>
+              <p class="font-medium mb-6">E-commerce for things nobody wants. Brutalist heavy.</p>
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2">
+                  <span class="text-xs font-bold border border-neo-text px-2 py-1 uppercase">Shopify</span>
+                </div>
+                <button class="bg-neo-text text-neo-bg p-2 hover:bg-neo-primary hover:text-black transition-colors border-2 border-transparent hover:border-neo-text">
+                  <i data-lucide="arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="bg-neo-bg border-4 border-neo-text neo-hover-lift group cursor-pointer">
+            <div class="h-64 bg-neo-primary border-b-4 border-neo-text flex items-center justify-center overflow-hidden relative">
+              <i data-lucide="triangle" class="w-48 h-48 absolute -bottom-10 -right-10 stroke-[1px] opacity-20"></i>
+              <span class="text-9xl font-black opacity-20 group-hover:scale-110 transition-transform duration-300 text-black">03</span>
+            </div>
+            <div class="p-8 text-neo-text">
+              <h3 class="text-3xl font-black mb-2 uppercase">Type Destroy</h3>
+              <p class="font-medium mb-6">Experimental typography generator.</p>
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2">
+                  <span class="text-xs font-bold border border-neo-text px-2 py-1 uppercase">WebGL</span>
+                  <span class="text-xs font-bold border border-neo-text px-2 py-1 uppercase">Three.js</span>
+                </div>
+                <button class="bg-neo-text text-neo-bg p-2 hover:bg-neo-primary hover:text-black transition-colors border-2 border-transparent hover:border-neo-text">
+                  <i data-lucide="arrow-up-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <footer id="contact" class="bg-black text-white py-24 relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-2 bg-neo-primary"></div>
+
+      <div class="container mx-auto px-4 relative z-10 text-center">
+        <div class="inline-block bg-neo-primary text-black border-4 border-black p-4 shadow-[8px_8px_0_0_var(--color-neo-shadow)] mb-12 rotate-2">
+          <i data-lucide="mail" class="w-12 h-12"></i>
+        </div>
+
+        <h2 class="text-5xl md:text-8xl font-black uppercase mb-8 leading-none">
+          Let's Make<br />
+          <span class="text-neo-primary text-stroke-current">Something</span><br />
+          Loud
+        </h2>
+
+        <div class="flex justify-center gap-6 mt-12 flex-wrap">
+          <a
+            href="mailto:hello@example.com"
+            class="text-2xl font-bold border-2 border-white px-8 py-4 hover:bg-white hover:text-black transition-all hover:shadow-[8px_8px_0_0_var(--color-neo-primary)] active:translate-x-1 active:translate-y-1 active:shadow-none uppercase"
+          >
+            Email Me
+          </a>
+          <a
+            href="#"
+            class="text-2xl font-bold border-2 border-white px-8 py-4 hover:bg-neo-primary hover:text-black hover:border-neo-primary transition-all hover:shadow-[8px_8px_0_0_var(--color-neo-shadow)] active:translate-x-1 active:translate-y-1 active:shadow-none uppercase"
+          >
+            LinkedIn
+          </a>
+        </div>
+
+        <p class="mt-24 text-gray-400 font-bold uppercase tracking-widest text-sm">© 2026 Gold & Black. Steal this design.</p>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button
+      id="back-to-top"
+      class="fixed bottom-8 right-8 p-3 bg-neo-primary text-black border-4 border-black shadow-[4px_4px_0_0_black] z-50 transition-all hover:scale-110 hover:-translate-y-1 active:scale-95 active:translate-y-0 active:shadow-none hidden opacity-0 translate-y-10"
+      aria-label="Back to top"
+    >
+      <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+
+    <script>
+      // Use Lucide to render icons
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
