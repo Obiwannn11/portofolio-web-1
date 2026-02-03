@@ -39,7 +39,7 @@
   /* DARK MODE: Black & Gold */
   --bg: #0a0a0a;          /* Page background - Near Black */
   --text: #FFFFFF;        /* Text color - White */
-  --primary: #FFD700;     /* Gold accent */
+  --primary: #000000;     /* Gold accent */
   --reverse: #FFD700;     /* Inverted blocks - Gold */
   --container: #1a1a1a;   /* Container/card bg - Dark Gray */
   --muted: #2a2a2a;       /* Dark Gray */
